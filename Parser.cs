@@ -47,6 +47,10 @@ namespace PokemonImport
 
         }
 
+        /// <summary>
+        /// Get all files in temp folder
+        /// </summary>
+        /// <returns></returns>
         List<string> GetAllFiles()
         {
             return Directory.GetFiles(directoryPath).Where(x => !x.EndsWith(".txt")).ToList();
@@ -74,6 +78,9 @@ namespace PokemonImport
             return new MyFile(delimiter, fileName, extension);
         }
 
+        /// <summary>
+        /// Write errors to console
+        /// </summary>
         void ReportErrors()
         {
             Console.WriteLine("Process exited with errors!");

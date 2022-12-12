@@ -24,6 +24,11 @@ namespace PokemonImport
             SqlConString = sqlConStringBuilder.ToString();
         }
 
+        /// <summary>
+        /// Read all lines from csv - Run insert stored procedure on each line
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
         public List<Error> InsertPokemonData(MyFile file)
         {
             List<Error> errors = new List<Error>();
