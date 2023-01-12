@@ -80,6 +80,7 @@ namespace PokemonImport
 
         /// <summary>
         /// Write errors to console
+        /// todo: remove or rework how this gets called
         /// </summary>
         void ReportErrors()
         {
